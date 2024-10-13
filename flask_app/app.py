@@ -5,8 +5,8 @@ import urllib.parse
 app = Flask(__name__)
 
 # MongoDB connection configuration
-username = 'saikiranpinnelli'
-password = 'Saikiran.123'  # Original password
+username = 'swethamacha'
+password = 'Sweety123'  
 encoded_password = urllib.parse.quote(password)  # URL-encode the password
 
 # Initialize the MongoDB client and collection
@@ -16,7 +16,7 @@ products_collection = None
 
 # Attempt to connect to MongoDB
 try:
-    client = MongoClient(f'mongodb+srv://saikiranpinnelli:Saikiran.123@devops.vbq7s.mongodb.net/?retryWrites=true&w=majority&appName=DevOps')
+    client = MongoClient(f'mongodb+srv://swethamacha:Sweety123 @devops.vbq7s.mongodb.net/?retryWrites=true&w=majority&appName=DevOps')
     db = client['shop_db']
     products_collection = db['products']  # This must be defined after the successful connection
     print("Connected to MongoDB successfully")
